@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Emmanuel Rodriguez</title>
     <link rel="stylesheet" href="styles/main_style.css">
+    <script src="https://kit.fontawesome.com/cd6564942c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="contenedor">
@@ -15,23 +16,81 @@
                     <h2>E<span>R</span></h2>
                 </div>
                 <ul class="menu">
-                    <li ><a href="#" class="act">Home</a></li>
-                    <li><a href="#">About me</a></li>
+                    <li ><a href="#main" class="act">Home</a></li>
+                    <li><a href="#about">About me</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <main class="main" id="main">
             <div class="infocont">
-                <h1>I am <span>John</span> Carter</h1>
+                <h1>I am <span>Emmanuel</span> Rodriguez</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur eius totam dolor ullam voluptatum provident, quidem voluptate? Maiores vitae quis eligendi impedit quas ullam, ducimus nesciunt quo neque incidunt.</p>
                 <a download href="#">
-                    <button>Download CV</button>
+                    <button class="dcv" >Download CV</button>
                 </a>
             </div>
-            <img src="" alt="">
+            <img src= "resurces/img/Me.png" alt="Emmanuel Rodriguez retrato">
         </main>
     </div>
+    <div class="about" id="about">
+        <img src="resurces/img/about.png" alt="Emmanuelrodriguez portafolio">
+        <div class="about-info">
+            <h2>About me</h2>
+            <div class="divider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem at, harum dolores officia, earum adipisci quae voluptates molestiae ducimus animi neque? Possimus quisquam perspiciatis expedita id provident quas facilis delectus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque nisi eius quis. Odio tenetur repudiandae sapiente, magnam impedit optio repellat perspiciatis maxime a itaque, omnis rerum dolorum sunt repellendus dolore!</p>
+            <button class="dcv"> Read More</button>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-headings">
+            <h2>My Work & Experience</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card_image">
+                    <img src="resurces/img/2-original.png" alt="TrabajosEmmanuel">
+                </div>
+                <div class="card_title">
+                    <h2>Project description</h2>
+                    <div class="project_links">
+                        <a href="#"> 
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#"> 
+                            <i class="fa-solid fa-alien-8bit"></i>
+                        </a>
+                        <a href="#"> 
+                            <i class="fa-brands fa-alipay"></i>
+                        </a>
+                    </div>
+                    <button class="project-details">
+                        Project Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <h2>Emmanuel Rodríguez</h2>
+            <h3>GameDev</h5>
+        </div>
+        <div class="sotial_network">
+            <a href="https://twitter.com/El_Memex"><i class="fab fa-twitter"></i></a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
 </body>
 </html>
